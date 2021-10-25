@@ -32,7 +32,7 @@ legend('C=10uF','C=47uF', 'C=100uF')
 % Respuestas en el tiempo teóricas
 %Caso 1: C= 100uF y R=10k
 tau_100uF = 1;
-A = 4.9;
+A = 6;
 y_100uF = A*(1-exp(-t_100uF./tau_100uF));
 
 figure
@@ -47,7 +47,7 @@ hold off
 
 %Caso 2: C= 47 uF y R=10k
 tau_47uF = 0.47;
-A = 4.9;
+A = 5;
 y_47uF = A*(1-exp(-t_47uF./tau_47uF));
 
 figure
@@ -62,7 +62,7 @@ hold off
 
 %Caso 3:C= 10 uF y R=10k
 tau_10uF = 0.1;
-A = 4.9;
+A = 5;
 y_10uF = A*(1-exp(-t_10uF./tau_10uF));
 
 figure
